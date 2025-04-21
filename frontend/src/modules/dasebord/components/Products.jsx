@@ -5,7 +5,7 @@ const Products = ({products}) => {
     console.log('All Product arehe', products);
     
   return (
-    <>{products.map(product=><Product key={product.id} product={product}/>)}</>
+    <>{products.map(product=><Product key={product['_id']} product={product}/>)}</>
   );
 }
 
